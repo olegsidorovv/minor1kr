@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <title>Frank Ocean</title>
+    <style>
+        .wrapper {
+            position: relative;
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        .passport {
+            width: 100%;
+        }
+
+        .user {
+            position: absolute;
+            max-width: 125px;
+            bottom: 112px;
+            left: 36px;
+        }
+
+        .wrapper p {
+            position: absolute;
+            font-weight: 700;
+            font-size: 14px;
+            color: brown;
+        }
+
+        #issued {
+            top: 72px;
+            left: 114px;
+        }
+
+        #date {
+            top: 152px;
+            left: 114px;
+        }
+
+        #id_police {
+            top: 152px;
+            right: 114px;
+        }
+
+        #surname {
+            bottom: 296px;
+            left: 280px;
+        }
+
+        #name {
+            bottom: 244px;
+            left: 280px;
+        }
+
+        #namefather {
+            bottom: 216px;
+            left: 280px;
+        }
+
+        #gender {
+            bottom: 190px;
+            left: 200px;
+        }
+
+        #birthday {
+            bottom: 190px;
+            right: 100px;
+        }
+
+        #city {
+            bottom: 164px;
+            left: 280px;
+        }
+
+        .info {
+            max-width: fit-content;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .dom_js_checking {
+            color: #4b1c01;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .dom_js_checking:hover {
+            text-decoration: underline;
+        }
+
+        #change_btn {
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #4b1c01;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" target="_blank" style="width: 50px;"
+                href="https://ru.ruwiki.ru/wiki/%D0%A4%D1%80%D1%8D%D0%BD%D0%BA_%D0%9E%D1%83%D1%88%D0%B5%D0%BD">
+                <img src="images/logo.png">
+            </a>
+            <h1>Frank Ocean</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Об авторе</a></li>
+                    <li><a href="albums.html">Альбомы</a></li>
+                    <li><a href="popular.html">Популярное</a></li>
+                    <li><a href="interesting.html">Интересное</a></li>
+                    <li><a href="form_info.html">Личный кабинет</a></li>
+                    <li><a id="active" href="pasport.html">Паспорт</a></li>
+                    <li><a href="task.html">Задача</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="main">
+            <div class="wrapper">
+                <img class="passport" src="images/passport.JPG" alt="">
+                <img class="user" src="images/user.jpeg" alt="">
+
+                <p id="issued">ГУ МВД ПО Г. МОСКВЕ</p>
+                <p id="date">31.01.2000</p>
+                <p id="id_police">312-00-00</p>
+                <p id="surname">Петров</p>
+                <p id="name">Петр</p>
+                <p id="namefather">Петрович</p>
+                <p id="gender">Муж</p>
+                <p id="birthday">01.01.2000</p>
+                <p id="city">Москва</p>
+
+            </div>
+            <div class="info">
+                <a class="dom_js_checking" href="images/dom_js_checking.png" target="_blank">DOM_JS. Считываем
+                    информацию из DOM</a>
+                <button type="button" id="change_btn">Смена языка</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        © 2024 student HSE
+    </footer>
+
+    <script>
+        document.getElementById('change_btn').addEventListener('click', () => {
+            const issued = document.getElementById('issued')
+            const surname = document.getElementById('surname')
+            const name = document.getElementById('name')
+            const namefather = document.getElementById('namefather')
+            const gender = document.getElementById('gender')
+            const city = document.getElementById('city')
+
+            if (name.innerText === 'Петр') {
+                issued.innerText = 'MOSCOW GU MVD'
+                surname.innerText = 'Petrov'
+                name.innerText = 'Petr'
+                namefather.innerText = 'Petrovich'
+                gender.innerText = 'Male'
+                city.innerText = 'Moscow'
+            } else {
+                issued.innerText = 'ГУ МВД ПО Г. МОСКВЕ'
+                surname.innerText = 'Петров'
+                name.innerText = 'Петр'
+                namefather.innerText = 'Петрович'
+                gender.innerText = 'Муж'
+                city.innerText = 'Москва'
+            }
+        })
+
+    </script>
+</body>
+
+</html>

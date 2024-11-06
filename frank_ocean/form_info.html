@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <title>Frank Ocean</title>
+    <style>
+        table {
+            margin: 20px 0;
+            width: 100%;
+            color: #fff;
+            border-collapse: collapse;
+            background-image: url('./images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        .form {
+            max-width: 500px;
+            margin: 40px auto;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            padding: 20px;
+            background-color: #f4f4f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        form label {
+            display: inline-block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form input[type="tel"],
+        form input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        form button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4b1c01;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button[type="submit"]:hover {
+            background-color: #8a3300;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" target="_blank" style="width: 50px;"
+                href="https://ru.ruwiki.ru/wiki/%D0%A4%D1%80%D1%8D%D0%BD%D0%BA_%D0%9E%D1%83%D1%88%D0%B5%D0%BD">
+                <img src="images/logo.png">
+            </a>
+            <h1>Frank Ocean</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Об авторе</a></li>
+                    <li><a href="albums.html">Альбомы</a></li>
+                    <li><a href="popular.html">Популярное</a></li>
+                    <li><a href="interesting.html">Интересное</a></li>
+                    <li><a id="active" href="form_info.html">Личный кабинет</a></li>
+                    <li><a href="pasport.html">Паспорт</a></li>
+                    <li><a href="task.html">Задача</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+
+        <div class="form">
+            <h3>Данные пользователя</h3>
+            <form action="https://httpbin.org/get" name="UserEnterInfo" method="get" target="_blank">
+                <label for="last_name">Фамилия:</label>
+                <input type="text" id="last_name" name="last_name" required>
+
+                <label for="first_name">Имя:</label>
+                <input type="text" id="first_name" name="first_name" required>
+
+                <label for="group">Группа:</label>
+                <input type="text" id="group" name="group" required>
+
+                <label for="phone">Мобильный телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="send_date">Дата отправки сообщения:</label>
+                <input type="date" id="send_date" name="send_date" required>
+
+                <button type="submit">Отправить данные</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        © 2024 student HSE
+    </footer>
+</body>
+
+</html>

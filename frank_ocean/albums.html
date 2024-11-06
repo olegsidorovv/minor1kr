@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <title>Frank Ocean</title>
+    <style>
+        table {
+            margin: 20px 0;
+            width: 100%;
+            color: #fff;
+            border-collapse: collapse;
+            background-image: url('./images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        .form {
+            max-width: 500px;
+            margin: 40px auto;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            padding: 20px;
+            background-color: #f4f4f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        form label {
+            display: inline-block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        form input[type="text"],
+        form input[type="number"],
+        form input[type="date"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        form input[type="radio"],
+        form input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        form button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4b1c01;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button[type="submit"]:hover {
+            background-color: #371400;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" target="_blank" style="width: 50px;"
+                href="https://ru.ruwiki.ru/wiki/%D0%A4%D1%80%D1%8D%D0%BD%D0%BA_%D0%9E%D1%83%D1%88%D0%B5%D0%BD">
+                <img src="images/logo.png">
+            </a>
+            <h1>Frank Ocean</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Об авторе</a></li>
+                    <li><a id="active" href="albums.html">Альбомы</a></li>
+                    <li><a href="popular.html">Популярное</a></li>
+                    <li><a href="interesting.html">Интересное</a></li>
+                    <li><a href="form_info.html">Личный кабинет</a></li>
+                    <li><a href="pasport.html">Паспорт</a></li>
+                    <li><a href="task.html">Задача</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section  id="main__albums" class="main">
+            <h2>Альбомы</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Альбом</th>
+                        <th>Дата выхода</th>
+                        <th>Список песен</th>
+                        <th>Количество прослушиваний</th>
+                        <th>Ссылка</th>
+                        <th>Обложка</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Blonde</td>
+                        <td>20 августа 2016</td>
+                        <td>Nikes, Ivy, Pink + White, и т.д.</td>
+                        <td>1,000,000+</td>
+                        <td><a href="https://www.last.fm/ru/music/Frank+Ocean/Blonde">Слушать</a></td>
+                        <td><img src="images/cover1.jpeg" alt="Обложка Blonde" width="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Channel Orange</td>
+                        <td>10 июля 2012</td>
+                        <td>Thinkin Bout You, Pyramids, и т.д.</td>
+                        <td>2,000,000+</td>
+                        <td><a href="https://www.last.fm/ru/music/Frank+Ocean/channel+ORANGE">Слушать</a></td>
+                        <td><img src="images/cover2.jpg" alt="Обложка Channel Orange" width="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Endless</td>
+                        <td>19 августа 2016</td>
+                        <td>At Your Best, Alabama, и т.д.</td>
+                        <td>500,000+</td>
+                        <td><a href="https://www.last.fm/ru/music/Frank+Ocean/Endless">Слушать</a></td>
+                        <td><img src="images/cover3.jpg" alt="Обложка Endless" width="50"></td>
+                    </tr>
+                    <tr>
+                        <td>nostalgia, ULTRA</td>
+                        <td>18 февраля 2011</td>
+                        <td>Novacane, Swim Good, и т.д.</td>
+                        <td>750,000+</td>
+                        <td><a href="https://www.last.fm/ru/music/Frank+Ocean/nostalgia,+ULTRA">Слушать</a></td>
+                        <td><img src="images/cover4.jpg" alt="Обложка nostalgia, ULTRA" width="50"></td>
+                    </tr>
+                    <tr>
+                        <td>In My Room</td>
+                        <td>2019</td>
+                        <td>In My Room</td>
+                        <td>300,000+</td>
+                        <td><a href="https://www.last.fm/ru/music/Frank+Ocean/In+My+Room">Слушать</a></td>
+                        <td><img src="images/cover5.png" alt="Обложка In My Room" width="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Novacane</td>
+                        <td>2011</td>
+                        <td>Novacane</td>
+                        <td>400,000+</td>
+                        <td><a href="https://www.last.fm/ru/music/Frank+Ocean/Novacane">Слушать</a></td>
+                        <td><img src="images/cover6.jpg" alt="Обложка Novacane" width="50"></td>
+                    </tr>
+                    <tr>
+                        <td>Channel</td>
+                        <td>2012</td>
+                        <td>Thinkin Bout You, Lost</td>
+                        <td>1,500,000+</td>
+                        <td><a href="https://www.last.fm/ru/music/Frank+Ocean/Chanel">Слушать</a></td>
+                        <td><img src="images/cover7.jpg" alt="Обложка Channel" width="50"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <div class="form">
+            <h3>Форма для заказа альбома</h3>
+            <form action="https://httpbin.org/get" name="UserEnter" method="get" target="_blank">
+                <input type="hidden" name="album_id" value="12345">
+                <label for="username">Ваше имя:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="quantity">Количество дисков:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                <label>Тип доставки:</label>
+                <input type="radio" id="standard" name="delivery_type" value="standard" checked>
+                <label for="standard">Стандартная</label>
+                <input type="radio" id="express" name="delivery_type" value="express">
+                <label for="express">Экспресс</label>
+                <label for="gift_wrap">Дополнительно:</label>
+                <input type="checkbox" id="gift_wrap" name="gift_wrap" value="yes">
+                <label for="gift_wrap">Подарочная упаковка</label>
+                <label for="delivery_date">Дата доставки:</label>
+                <input type="date" id="delivery_date" name="delivery_date" required>
+                <label for="password">Пароль для подтверждения:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Заказать</button>
+            </form>
+        </div>
+
+
+        <div class="to_start"><a href="#main__albums">К началу</a></div>
+    </main>
+    <footer>
+        © 2024 student HSE
+    </footer>
+</body>
+
+</html>
